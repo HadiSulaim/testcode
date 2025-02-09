@@ -1,0 +1,16 @@
+## Pixel points in general ##
+
+In computer vision, an image is composed of pixels, which are the smallest units of the image. Each pixel represents a single point in the image and holds color information. The position of each pixel is defined by its coordinates, typically in a 2D Cartesian coordinate system where the top-left corner of the image is the origin (0, 0). The x-coordinate increases to the right, and the y-coordinate increases downward.
+
+Understanding pixel coordinates is crucial for various computer vision tasks, such as object detection, image segmentation, and feature extraction. By manipulating pixel values and their coordinates, algorithms can analyze and interpret visual information from images (Szeliski, 2010).
+
+Reference: Szeliski, R. (2010). Computer Vision: Algorithms and Applications. Springer.
+
+
+========================================================================================================================================
+
+## code ## 
+This script display an image and capture mouse click events, providing a practical example of interactive image processing. Initially, the script imports the OpenCV library (cv2), which is widely used for computer vision tasks. The core functionality is encapsulated in the click_event function, which is designed to handle mouse click events. Specifically, when the left mouse button is clicked (cv2.EVENT_LBUTTONDOWN), the function prints the coordinates of the click to the console and overlays these coordinates on the image. 
+This able us then to know the coordination of the points we needed to add to SAM2 model and then be sure that the segmentation SAM2 model works perfectly as we need by segmenting the objects in our data.
+
+This interactive approach to image processing demonstrates the utility of OpenCV in developing applications that require real-time user interaction with visual data, a common requirement in various computer vision applications
